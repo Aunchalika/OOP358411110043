@@ -1,0 +1,152 @@
+Index: src/lab7/studentApp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/lab7/studentApp.java	(date 1550470165052)
++++ src/lab7/studentApp.java	(date 1550470165052)
+@@ -0,0 +1,26 @@
++package lab7;
++
++public class studentApp {
++    public static void main(String[] args) {
++        //object creation
++        //การสร้าง object
++        Student std1 = new Student();
++        System.out.println(std1.getName());
++        std1.setName("Boy");
++        System.out.println(std1.getName());
++        System.out.println(std1.getGender());
++        std1.setGender('M');
++        System.out.println(std1.getGender());
++        std1.setId("111111111111");
++        System.out.println(std1.getId());
++        //////////////////////
++        Student std2 = new Student("222222222222","Girl",'F');
++
++
++        System.out.println(std1.getName());
++        System.out.println(std2.getName());
++
++
++    }
++}//class
++}
+Index: src/lab7/car.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/lab7/car.java	(date 1550470441612)
++++ src/lab7/car.java	(date 1550470441612)
+@@ -0,0 +1,53 @@
++package lab7;
++
++public class car {public class Car {
++    private String color;
++    private int seat;
++    private String gearType;
++    private String engineSize;
++
++    //constructor
++
++
++    public Car(String color, int seat, String gearType, String engineSize) {
++        this.color = color;
++        this.seat = seat;
++        this.gearType = gearType;
++        this.engineSize = engineSize;
++    }
++    //Getter and Setter methods
++
++
++    public String getColor() {
++        return color;
++    }
++
++    public void setColor(String color) {
++        this.color = color;
++    }
++
++    public int getSeat() {
++        return seat;
++    }
++
++    public void setSeat(int seat) {
++        this.seat = seat;
++    }
++
++    public String getGearType() {
++        return gearType;
++    }
++
++    public void setGearType(String gearType) {
++        this.gearType = gearType;
++    }
++
++    public String getEngineSize() {
++        return engineSize;
++    }
++
++    public void setEngineSize(String engineSize) {
++        this.engineSize = engineSize;
++    }
++}
++}
+Index: src/lab7/student.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/lab7/student.java	(date 1550470266438)
++++ src/lab7/student.java	(date 1550470266438)
+@@ -0,0 +1,49 @@
++package lab7;
++
++public class student {public class Student {
++    //class properties
++    private String id;
++    private String name;
++    private char gender;
++
++
++
++    //constructor
++    //1.default constructor
++    public Student(){}
++    //2.design constructor
++    public Student(String id, String name, char gender){
++        this.id = id;
++        this.name = name;
++        this.gender = gender;
++
++    }
++
++    //getter and setter methods
++    public String getId(){
++        return this.id;
++    }
++    public void setId(String id){
++        this.id = id;
++    }
++    public String getName(){
++        return this.name;
++    }
++    public void setName(String name){
++        this.name = name;
++    }
++    public char getGender(){
++        return this.gender;
++    }
++    public void setGender(char gender){
++        this.gender = gender;
++    }
++
++
++
++
++
++
++
++}//class
++}
